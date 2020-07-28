@@ -14,7 +14,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private static final String TAG = "Estado";
+    //private static final String TAG = "Estado";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .baseUrl(APIService.URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        APIService service = retrofit.create(APIService.class);
+       // APIService service = retrofit.create(APIService.class);
        // Call<Item> requesItem = service.listaItem();
     // Falta llamar al objeto y que este tenga 
     }
